@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend APIs for carrier pigeon scripts",
+  "main": "server.js",
+  "dependencies": {
+    "@google-cloud/language": "^4.2.1",
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "http-status-codes": "^2.1.4",
+    "morgan": "^1.10.0",
+    "selenium-webdriver": "^4.0.0-beta.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r dotenv/config server.js"
+  },
+  "author": "dan murphy",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danmurphy1217/Pathstream/blob/master/proj_carrier_pigeon/main.py"
+  }
+}
