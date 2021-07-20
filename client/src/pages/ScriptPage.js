@@ -6,6 +6,7 @@ import Paper from "@material-ui/core/Paper";
 import { Button } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 import InfoIcon from '@material-ui/icons/Info';
+import Run from "../components/Buttons/Run";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -42,6 +43,7 @@ const Script = ({ match, location }) => {
               id="standard-basic"
               label={scriptInputs[i]}
               style={{ width: "100%" }}
+              key={i}
             />
           </Grid>
           <Grid item xs={12} sm={1}></Grid>
@@ -125,7 +127,7 @@ const Script = ({ match, location }) => {
               <form className={classes.root} noValidate autoComplete="off">
                 {buildInputUIFrom(scriptInputs)}
               </form>
-            <Button style={{ backgroundColor: "#FDC558" }}>RUN SCRIPT</Button>
+              <Run styles={{ backgroundColor: "#FDC558" }} endpoint="/test" />
             </Paper>
           </Grid>
           <Grid item xs={12} sm={2}>
