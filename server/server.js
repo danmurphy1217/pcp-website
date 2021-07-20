@@ -1,6 +1,7 @@
 import express from "express"; // backend api
 import axios from "axios"; // requests!
 import dueDateRouter from "./routes/dueDateScript.js";
+import testRouter from "./routes/test.js";
 
 // MIDDLEWARE!
 import cors from "cors"; // enforce CORS, will be set to frontend URL when deployed
@@ -20,3 +21,5 @@ app.listen(5000, function () {
 });
 
 app.use('', dueDateRouter)
+
+app.use('', testRouter)
